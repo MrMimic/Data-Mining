@@ -41,7 +41,7 @@ context.verify_mode = ssl.CERT_REQUIRED
 context.load_verify_locations(certifi.where())
 httpsHandler = urllib.request.HTTPSHandler(context = context)
 manager = urllib.request.HTTPPasswordMgrWithDefaultRealm()
-manager.add_password(None, 'https://api.omictools.com/tools', 'cismef', 'aiy_oi4Eghei7Mom9Woh9eim*ah9eiM9')
+manager.add_password(None, 'https://api.omictools.com/tools', 'cismef', '<APIKEY>')
 authHandler = urllib.request.HTTPBasicAuthHandler(manager)
 opener = urllib.request.build_opener(httpsHandler, authHandler)
 urllib.request.install_opener(opener)

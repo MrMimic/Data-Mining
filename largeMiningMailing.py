@@ -2,7 +2,6 @@
 
 # # # # 
 # LARGE MAILING MINING
-# emeric.dynomant@omictools.com
 # # # # 
 # Search for queried terms into scientific APIs and extract emails
 # Used for communication campaigns 
@@ -309,8 +308,8 @@ class Requests:
 # Initialize our class
 hiCMining = Requests()
 # And get 
-print(hiCMining.getPubmedEmails('Hi-C'))
-print(hiCMining.getPlosEmails('Hi-C'))
-print(hiCMining.getArxivEmails('Hi-C'))
+hiCMining.getPubmedEmails('Hi-C')
+hiCMining.getPlosEmails('Hi-C')
+hiCMining.getArxivEmails('Hi-C')
 hiCMining.getSpringerEmails('Hi-C')
 

@@ -1,4 +1,3 @@
-# API mining
+## pubmed_datamining
 
-Because data mining is fun. 
-And statistics you can do with are even more.
+Mine pubmed for a specified term and compare PMID results to a database to avoid redundancy.

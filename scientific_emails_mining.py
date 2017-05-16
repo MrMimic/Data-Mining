@@ -6,10 +6,6 @@
 # Search for queried terms into scientific APIs and extract emails
 # Used for communication campaigns 
 # # # #
-
-# # # #
-# VERSIONNING
-# # # #
 # 1.0		27/04/2017		Listing APIs
 # 1.1		28/04/2017		Pubmed mining + extract position of the author in authors list
 # 1.2		02/05/2017		Let make one functions for every journal to group set() and get()
@@ -32,13 +28,10 @@ regexFirstName = re.compile('<forename>(.*)</forename>')
 regexPlosAuthorID = re.compile('<a class="author-name" data-author-id="([0-9]{1,2})">')
 regexPlosName = re.compile('data-author-id="[0-9]{1,2}">(.*) <span class="')
 
-
 class Requests:
-
 	def __init__(self):
 		''' Nothing to initialize '''
 		pass
-
 						
 	###   PUBMED   ####					PMIDs > efetch > emails
 	def getPubmedEmails(self, searchedTerm):
@@ -90,8 +83,6 @@ class Requests:
 						if(emailAdress not in pubmedEmails):
 							pubmedEmails.append(emailAdress)
 							print(authorPosition, authorLastName, authorFirstName, emailAdress, pubmedID, emailSource)
-						
-
 
 	###   PLOS ONE   ###				PLOS id > wget URL > emails
 	def getPlosEmails(self, searchedTerm):
@@ -140,9 +131,7 @@ class Requests:
 						emailSource = 'PLOS'
 						if(plosAuthorEmail not in plosEmails):
 							plosEmails.append(plosAuthorEmail)
-							print(authorPosition, authorName, plosAuthorEmail, plosID, emailSource)
-	
-			
+							print(authorPosition, authorName, plosAuthorEmail, plosID, emailSource)			
 
 	###   ARXIV   ###					Page URL > Scrapping > names > esearch > emails
 	def getArxivEmails(self, searchedTerm):
@@ -210,10 +199,8 @@ class Requests:
 							emailSource = 'arXiv'
 							if(emailAdress not in arxivEmails):
 								arxivEmails.append(emailAdress)
-								print(authorPosition, authorLastName, authorFirstName, emailAdress, arxivURL, emailSource)
-			
-			
-	
+								print(authorPosition, authorLastName, authorFirstName, emailAdress, arxivURL, emailSource)			
+								
 	###   SPRINGER   ###				DOI > Conversion > efetch > emails
 	def getSpringerEmails(self, searchedTerm):
 		''' List to store every DOI, Springer's API send 50 resulsts / page max '''
@@ -292,18 +279,11 @@ class Requests:
 							springerEmails.append(emailAdress)
 							print(authorPosition, authorLastName, authorFirstName, emailAdress, uniqDOI, emailSource)
 
-
-
 	###   NATURE   ###					Names + titre > esearch > efetch > emails
 	def getNatureEmails(self, searchedTerm):
 		''' blabla '''
 		
-		
-
-
-
-
-		
+			
 ''' This part can be parallelized (list of searchs with ID) '''
 # Initialize our class
 hiCMining = Requests()
@@ -312,4 +292,3 @@ hiCMining.getPubmedEmails('Hi-C')
 hiCMining.getPlosEmails('Hi-C')
 hiCMining.getArxivEmails('Hi-C')
 hiCMining.getSpringerEmails('Hi-C')
-

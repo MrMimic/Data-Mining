@@ -2,13 +2,12 @@
 
 
 ''' IMPORTS '''
-import re									# REGEX
-import json									# JSON MANIPULATION
-import urllib								# CURL
-import string								# ALPHABET
-import requests								# CURL OPTIONS
-from bs4 import BeautifulSoup as bs			# HTML PARSING
-
+import re
+import json
+import urllib
+import string
+import requests
+from bs4 import BeautifulSoup as bs
 
 ''' REGEX '''
 soupGetName = re.compile('title="(.*)">')
@@ -22,9 +21,7 @@ copainAvantProfession = re.compile('<p class="title">(.*)</p>')
 copainAVantPicture = re.compile('<meta content="(.*)" property="og:image"/>]')
 
 
-class search:
-	
-	
+class search:	
 	''' Step 0: initiation '''
 	def __init__(self):
 		self.frBase = './frBase.json'
@@ -151,5 +148,3 @@ familyNamesList = search.nameList()
 frBaseList = search.adress(familyNamesList)
 frSOcialList = search.social(frBaseList)
 search.outPrint(frSOcialList)
-
-

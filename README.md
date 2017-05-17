@@ -8,4 +8,6 @@ Search for a keyword on many scientific API and get huge lists of emails from pp
 
 ## personal_data_mining
 
-Scraping of two famous french websites and extract personal data from publics profiles (http://tadadata.fr/data-mining-personel/).
+Scraping of two famous french websites and extract personal data from publics profiles 
+
+http://tadadata.fr/data-mining-personel/.

@@ -8,8 +8,6 @@ start = time.time()
 
 url = 'https://www.data.gouv.fr/api/1/topics/'
 # https://www.data.gouv.fr/api/1/datasets/gares-ferroviaires-de-tous-types-exploitees-ou-non/
-# Parsing lien en lien
-# ttt fichier suivant type
 
 response = urllib.request.urlopen(url)
 data = response.read()

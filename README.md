@@ -14,6 +14,6 @@ http://tadadata.fr/data-mining-personel/
 
 ## data_gouv_fr.py
 
-Wrapper to extract data from french governmental website.
+Python wrapper to extract data from french governmental website data.gouv.fr.
 
 http://tadadata.fr/data-gouv-cadeau/

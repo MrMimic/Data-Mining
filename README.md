@@ -17,3 +17,7 @@ http://tadadata.fr/data-mining-personel/
 Python wrapper to extract data from french governmental website data.gouv.fr.
 
 http://tadadata.fr/data-gouv-cadeau/
+ 	
+## investissement_twitter
+
+Trying to search for startups rising lot of investments with twitter API.

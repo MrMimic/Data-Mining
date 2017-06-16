@@ -21,3 +21,9 @@ http://tadadata.fr/data-gouv-cadeau/
 ## investissement_twitter
 
 Trying to search for startups rising lot of investments with twitter API.
+
+### fuck_horoscope
+
+Gets huge amount of horoscope prediction with POST and plot stats on.
+
+http://tadadata.fr/hacking-horoscope/

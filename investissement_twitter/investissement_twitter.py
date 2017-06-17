@@ -31,3 +31,6 @@ try:
 
 except TwitterSearchException as e: # take care of all those ugly errors if there are some
     print(e)
+
+
+# LESS RESULTAS THAN MANUAL SEARCH ?

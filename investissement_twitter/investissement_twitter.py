@@ -33,4 +33,5 @@ except TwitterSearchException as e: # take care of all those ugly errors if ther
     print(e)
 
 
-# LESS RESULTAS THAN MANUAL SEARCH ?
+# LESS RESULTAS THAN MANUAL SEARCH ? 
+# APPLY SAME URL THAN SEARCH WINDOWS

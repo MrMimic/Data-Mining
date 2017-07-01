@@ -1,37 +1,71 @@
 
 # sudo pip3 install TwitterSearch
 # https://github.com/ckoepp/TwitterSearch
+#https://api.twitter.com/1.1/search/tweets.json?q=startup+millions+investissement&result_type=mixed&count=100&lang=fr
+
 from TwitterSearch import *
 
+requested_terms = ['startup', 'millions', 'investissement']
 
-try:
-    tso = TwitterSearchOrder() # create a TwitterSearchOrder object
-    
-    #tso.add_keyword(['startup', 'millions', 'investissement']) # let's define all words we would like to have a look for
-    tso.add_keyword(['startup+millions+investissement&src=typd']) # let's define all words we would like to have a look for
-    #tso.set_language('fr') # we want to see German tweets only
-    #tso.set_result_type('mixed') # we want to see German tweets only
-    #tso.set_count(100)
-    #tso.set_include_entities(True) # and don't give us all those entity information
 
-    print(tso.create_search_url())
+
+''' Retrive Twitter '''
+def get_news_on_twitter(requested_terms):
+	try:
+		tso = TwitterSearchOrder() # create a TwitterSearchOrder object
+		
+		tso.add_keyword(requested_terms) # let's define all words we would like to have a look for
+		#tso.add_keyword(['startup millions']) # let's define all words we would like to have a look for
+		tso.set_language('fr') # we want to see German tweets only
+		tso.set_result_type('mixed') # we want to see German tweets only
+		tso.set_count(100)
+		#tso.set_include_entities(True) # and don't give us all those entity information
+		#print(tso.create_search_url())
+		
+		# it's about time to create a TwitterSearch object with our secret tokens
+		ts = TwitterSearch(
+			consumer_key = 'XXX',
+			consumer_secret = 'XXX',
+			access_token = 'XXX',
+			access_token_secret = 'XXX')
+		
+		# Dictionnary to handle tweets
+		tweets = {}
+		id_tweet = 1
+		
+		 # this is where the fun actually starts :)
+		for tweet in ts.search_tweets_iterable(tso):
+			hashList = []
+			entities = []
+			for hashtag in tweet['entities']['hashtags']:
+				hashList.append(hashtag['text'])
+			for entity in tweet['entities']['user_mentions']:
+				entities.append(entity['name'])
+				
+			# Small dictionary used to add into the big one
+			t = {}
+			t['date'] = tweet['created_at']
+			t['hashtags'] = ', '.join(hashList)
+			t['text'] = tweet['text']
+			t['entities'] = entities
+			
+			# FU-SION
+			tweets[str(id_tweet)] = t
+			id_tweet += 1
+		
+		return tweets
 	
-    # it's about time to create a TwitterSearch object with our secret tokens
-    ts = TwitterSearch(
-        consumer_key = 'XXX',
-        consumer_secret = 'XXX',
-        access_token = 'XXX',
-        access_token_secret = 'XXX'
-     )
+	except TwitterSearchException as e: # take care of all those ugly errors if there are some
+		print(e)
 
-     # this is where the fun actually starts :)
-    for tweet in ts.search_tweets_iterable(tso):
-        print(tweet['text'])
-
-
-except TwitterSearchException as e: # take care of all those ugly errors if there are some
-    print(e)
+ 
+ 
+if __name__ == '__main__':
+	
+	tweets = get_news_on_twitter(requested_terms)
+	
+	print(tweets)
 
 
-# LESS RESULTAS THAN MANUAL SEARCH ? 
-# APPLY SAME URL THAN SEARCH WINDOWS
+
+

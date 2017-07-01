@@ -24,10 +24,10 @@ def get_news_on_twitter(requested_terms):
 		
 		# it's about time to create a TwitterSearch object with our secret tokens
 		ts = TwitterSearch(
-			consumer_key = 'XXX',
-			consumer_secret = 'XXX',
-			access_token = 'XXX',
-			access_token_secret = 'XXX')
+			consumer_key = '',
+			consumer_secret = '',
+			access_token = '',
+			access_token_secret = '')
 		
 		# Dictionnary to handle tweets
 		tweets = {}

@@ -79,5 +79,5 @@ for i in range(0, len(pmidNotInBase)-1):
 	print("https://www.ncbi.nlm.nih.gov/pubmed/" + pmidNotInBase[i])
 	print("\n")
 
-
+# New version on GitLab
 

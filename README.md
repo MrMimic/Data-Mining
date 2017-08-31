@@ -26,6 +26,6 @@ http://tadadata.fr/twitter-cette-dinformations/
 
 ## fuck_horoscope
 
-Gets huge amount of horoscope prediction with POST and plot stats on.
+Gets huge amount of horoscope prediction with POST and plot stats on to show that's bullshit.
 
 http://tadadata.fr/hacking-horoscope/

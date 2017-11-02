@@ -1,6 +1,6 @@
 ## pubmed_datamining
 
-A script to mine biological publications Pubmed for a specified term and compare PMID results to a database to avoid redundancy.
+A script to mine biological publications on Pubmed for a specified term and compare PMID results to a database to avoid redundancy.
 
 ## scientific_emails_mining
 

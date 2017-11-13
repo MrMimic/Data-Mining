@@ -3,7 +3,7 @@
 # # # # 
 # Script to mine Pubmed for new articles
 # You give a key word (eg. RNA seq) and he'll find publication about RNA sequencing
-# who contains an URL in the abstract (possible tool link) and who are NOT in omictools
+# who contains an URL in the abstract (possible tool link) and who are NOT in a database
 # # # #
 # v1.0:		03.04.2017		Request searched term and 'http OR https' in the abstract
 # v1.1:		17.04.2017		CGI mode for web implementation
@@ -39,7 +39,7 @@ authHandler = urllib.request.HTTPBasicAuthHandler(manager)
 opener = urllib.request.build_opener(httpsHandler, authHandler)
 urllib.request.install_opener(opener)
 # GET DATA
-response = urllib.request.urlopen('https://api.omictools.com/tools')
+response = urllib.request.urlopen('<API_URL>')
 data = response.read()
 # DECODE UTF-8
 encoding = response.info().get_content_charset('utf-8')
@@ -79,5 +79,5 @@ for i in range(0, len(pmidNotInBase)-1):
 	print("https://www.ncbi.nlm.nih.gov/pubmed/" + pmidNotInBase[i])
 	print("\n")
 
-
+# New version on GitLab
 

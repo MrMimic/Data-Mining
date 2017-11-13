@@ -1,6 +1,6 @@
 ## pubmed_datamining
 
-A script to mine biological publications Pubmed for a specified term and compare PMID results to a database to avoid redundancy.
+A script to mine biological publications on Pubmed for a specified term and compare PMID results to a database to avoid redundancy.
 
 ## scientific_emails_mining
 
@@ -22,8 +22,10 @@ http://tadadata.fr/data-gouv-cadeau/
 
 Trying to search for startups rising lot of investments with twitter API.
 
+http://tadadata.fr/twitter-cette-dinformations/
+
 ## fuck_horoscope
 
-Gets huge amount of horoscope prediction with POST and plot stats on.
+Gets huge amount of horoscope prediction (~50 years) with POST requests and plot stats on to show that's bullshit.
 
 http://tadadata.fr/hacking-horoscope/

@@ -1,0 +1,30 @@
+Alsace
+Champagne
+Ardenne
+Lorraine
+Aquitaine
+Limousin
+Poitou
+Charentes
+Auvergne
+Rhône-Alpes
+Bourgogne
+Franche
+Bretagne
+Corse
+Guadeloupe
+Guyane
+Ile-de-France
+Languedoc
+Roussillon
+Midi-Pyrénées
+La Réunion
+Martinique
+Mayotte
+Nord
+Pas-de-Calais
+Picardie
+Normandie
+Pays de la Loire
+Provence
+Alpes-Côte d'Azur

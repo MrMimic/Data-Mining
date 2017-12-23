@@ -1,0 +1,104 @@
+departmentCode,departmentName,regionCode,regionName
+01,Ain,84,Auvergne-Rhône-Alpes
+02,Aisne,32,Nord-Pas-de-Calais-Picardie
+03,Allier,84,Auvergne-Rhône-Alpes
+04,Alpes-de-Haute-Provence,93,"Provence-Alpes-Côte d'Azur"
+05,Hautes-Alpes,93,"Provence-Alpes-Côte d'Azur"
+06,Alpes-Maritimes,93,"Provence-Alpes-Côte d'Azur"
+07,Ardèche,84,Auvergne-Rhône-Alpes
+08,Ardennes,44,Alsace-Champagne-Ardenne-Lorraine
+09,Ariège,76,Languedoc-Roussillon-Midi-Pyrénées
+10,Aube,44,Alsace-Champagne-Ardenne-Lorraine
+11,Aude,76,Languedoc-Roussillon-Midi-Pyrénées
+12,Aveyron,76,Languedoc-Roussillon-Midi-Pyrénées
+13,Bouches-du-Rhône,93,"Provence-Alpes-Côte d'Azur"
+14,Calvados,28,Normandie
+15,Cantal,84,Auvergne-Rhône-Alpes
+16,Charente,75,Aquitaine-Limousin-Poitou-Charentes
+17,Charente-Maritime,75,Aquitaine-Limousin-Poitou-Charentes
+18,Cher,24,"Centre-Val de Loire"
+19,Corrèze,75,Aquitaine-Limousin-Poitou-Charentes
+21,Côte-d'or,27,Bourgogne-Franche-Comté
+22,Côtes-d'armor,53,Bretagne
+23,Creuse,75,Aquitaine-Limousin-Poitou-Charentes
+24,Dordogne,75,Aquitaine-Limousin-Poitou-Charentes
+25,Doubs,27,Bourgogne-Franche-Comté
+26,Drôme,84,Auvergne-Rhône-Alpes
+27,Eure,28,Normandie
+28,Eure-et-Loir,24,"Centre-Val de Loire"
+29,Finistère,53,Bretagne
+2a,Corse-du-Sud,94,Corse
+2b,Haute-Corse,94,Corse
+30,Gard,76,Languedoc-Roussillon-Midi-Pyrénées
+31,Haute-Garonne,76,Languedoc-Roussillon-Midi-Pyrénées
+32,Gers,76,Languedoc-Roussillon-Midi-Pyrénées
+33,Gironde,75,Aquitaine-Limousin-Poitou-Charentes
+34,Hérault,76,Languedoc-Roussillon-Midi-Pyrénées
+35,Ille-et-Vilaine,53,Bretagne
+36,Indre,24,"Centre-Val de Loire"
+37,Indre-et-Loire,24,"Centre-Val de Loire"
+38,Isère,84,Auvergne-Rhône-Alpes
+39,Jura,27,Bourgogne-Franche-Comté
+40,Landes,75,Aquitaine-Limousin-Poitou-Charentes
+41,Loir-et-Cher,24,"Centre-Val de Loire"
+42,Loire,84,Auvergne-Rhône-Alpes
+43,Haute-Loire,84,Auvergne-Rhône-Alpes
+44,Loire-Atlantique,52,"Pays de la Loire"
+45,Loiret,24,"Centre-Val de Loire"
+46,Lot,76,Languedoc-Roussillon-Midi-Pyrénées
+47,Lot-et-Garonne,75,Aquitaine-Limousin-Poitou-Charentes
+48,Lozère,76,Languedoc-Roussillon-Midi-Pyrénées
+49,Maine-et-Loire,52,"Pays de la Loire"
+50,Manche,28,Normandie
+51,Marne,44,Alsace-Champagne-Ardenne-Lorraine
+52,Haute-Marne,44,Alsace-Champagne-Ardenne-Lorraine
+53,Mayenne,52,"Pays de la Loire"
+54,Meurthe-et-Moselle,44,Alsace-Champagne-Ardenne-Lorraine
+55,Meuse,44,Alsace-Champagne-Ardenne-Lorraine
+56,Morbihan,53,Bretagne
+57,Moselle,44,Alsace-Champagne-Ardenne-Lorraine
+58,Nièvre,27,Bourgogne-Franche-Comté
+59,Nord,32,Nord-Pas-de-Calais-Picardie
+60,Oise,32,Nord-Pas-de-Calais-Picardie
+61,Orne,28,Normandie
+62,Pas-de-Calais,32,Nord-Pas-de-Calais-Picardie
+63,Puy-de-Dôme,84,Auvergne-Rhône-Alpes
+64,Pyrénées-Atlantiques,75,Aquitaine-Limousin-Poitou-Charentes
+65,Hautes-Pyrénées,76,Languedoc-Roussillon-Midi-Pyrénées
+66,Pyrénées-Orientales,76,Languedoc-Roussillon-Midi-Pyrénées
+67,Bas-Rhin,44,Alsace-Champagne-Ardenne-Lorraine
+68,Haut-Rhin,44,Alsace-Champagne-Ardenne-Lorraine
+69,Rhône,84,Auvergne-Rhône-Alpes
+70,Haute-Saône,27,Bourgogne-Franche-Comté
+71,Saône-et-Loire,27,Bourgogne-Franche-Comté
+72,Sarthe,52,"Pays de la Loire"
+73,Savoie,84,Auvergne-Rhône-Alpes
+74,Haute-Savoie,84,Auvergne-Rhône-Alpes
+75,Paris,11,Ile-de-France
+76,Seine-Maritime,28,Normandie
+77,Seine-et-Marne,11,Ile-de-France
+78,Yvelines,11,Ile-de-France
+79,Deux-Sèvres,75,Aquitaine-Limousin-Poitou-Charentes
+80,Somme,32,Nord-Pas-de-Calais-Picardie
+81,Tarn,76,Languedoc-Roussillon-Midi-Pyrénées
+82,Tarn-et-Garonne,76,Languedoc-Roussillon-Midi-Pyrénées
+83,Var,93,"Provence-Alpes-Côte d'Azur"
+84,Vaucluse,93,"Provence-Alpes-Côte d'Azur"
+85,Vendée,52,"Pays de la Loire"
+86,Vienne,75,Aquitaine-Limousin-Poitou-Charentes
+87,Haute-Vienne,75,Aquitaine-Limousin-Poitou-Charentes
+88,Vosges,44,Alsace-Champagne-Ardenne-Lorraine
+89,Yonne,27,Bourgogne-Franche-Comté
+90,"Territoire de Belfort",27,Bourgogne-Franche-Comté
+91,Essonne,11,Ile-de-France
+92,Hauts-de-Seine,11,Ile-de-France
+93,Seine-Saint-Denis,11,Ile-de-France
+94,Val-de-Marne,11,Ile-de-France
+95,Val-d'oise,11,Ile-de-France
+971,Guadeloupe,01,Guadeloupe
+972,Martinique,02,Martinique
+973,Guyane,03,Guyane
+974,"La Réunion",04,"La Réunion"
+976,Mayotte,06,Mayotte
+987,"Polynésie Française",NULL,NULL
+988,"Nouvelle Calédonie",NULL,NULL

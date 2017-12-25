@@ -1,10 +1,34 @@
-## pubmed_datamining
 
-A script to mine biological publications on Pubmed for a specified term and compare PMID results to a database to avoid redundancy.
+## BSV
 
-## scientific_emails_mining
+An old project about "Vegetal Health Reports" publisheb in France.
 
-Search for a keyword on many scientific API and get huge lists of emails from people working on the subject of the search.
+
+## data_gouv_stats
+
+Statistics about data.gouv.fr, the open-access portal of French government.
+
+http://tadadata.fr/data-gouv-cadeau/
+
+
+## fuck_horoscope
+
+Gets huge amount of horoscope prediction (~50 years) with POST requests and plot stats on to show that's bullshit.
+
+http://tadadata.fr/hacking-horoscope/
+
+
+## investissement_twitter
+
+Trying to search for startups rising lot of investments with twitter API.
+
+http://tadadata.fr/twitter-cette-dinformations/
+
+
+## map_nom_villes
+
+Look for villages or towns names containing a term and plot them on a map.
+
 
 ## personal_data_mining
 
@@ -12,20 +36,9 @@ Scraping of two famous french websites and extract personal data from publics pr
 
 http://tadadata.fr/data-mining-personel/
 
-## data_gouv_fr.py
 
-Python wrapper to extract data from french governmental website data.gouv.fr.
+## scientific_emails_mining
 
-http://tadadata.fr/data-gouv-cadeau/
- 	
-## investissement_twitter
+Search for a keyword on many scientific API and get huge lists of emails from people working on the subject of the search.
 
-Trying to search for startups rising lot of investments with twitter API.
 
-http://tadadata.fr/twitter-cette-dinformations/
-
-## fuck_horoscope
-
-Gets huge amount of horoscope prediction (~50 years) with POST requests and plot stats on to show that's bullshit.
-
-http://tadadata.fr/hacking-horoscope/

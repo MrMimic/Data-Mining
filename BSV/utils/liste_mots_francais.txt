@@ -1,5 +1,3 @@
-a
-à
 abaissa
 abaissable
 abaissables
@@ -180304,7 +180302,6 @@ imputions
 imputons
 imputrescible
 imputrescibles
-in
 inabordable
 inabordables
 inabrité
@@ -188399,7 +188396,6 @@ iodurée
 iodurées
 iodures
 iodurés
-ion
 ionien
 ionienne
 ioniennes

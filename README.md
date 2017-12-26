@@ -4,7 +4,7 @@
 An old project about "Vegetal Health Reports" publisheb in France.
 
 
-## data_gouv_stats
+## data_gouv_stats
 
 Statistics about data.gouv.fr, the open-access portal of French government.
 

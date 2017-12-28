@@ -1,6 +1,33 @@
 <DATA>
-	<PLANTS>
-		
+	<QUALIFIER>
+		<!-- BLÉ -->
+		<ITEM>
+			<ID>D0001</ID>
+			<TERM>dur</TERM>
+			<PLURAL_TERM>durs</PLURAL_TERM>
+		</ITEM>
+		<ITEM>
+			<ID>D0002</ID>
+			<TERM>tendre</TERM>
+			<PLURAL_TERM>tendre</PLURAL_TERM>
+		</ITEM>
+		<!-- BETTERAVE -->
+		<ITEM>
+			<ID>D0003</ID>
+			<TERM>sucrière</TERM>
+			<PLURAL_TERM>sucrières</PLURAL_TERM>
+			<SYNONYMS>
+				<SYN>à sucre</SYN>
+			</SYNONYMS>
+		</ITEM>
+		<ITEM>
+			<ID>D0004</ID>
+			<TERM>consommation</TERM>
+			<PLURAL_TERM>consommations</PLURAL_TERM>
+		</ITEM>
+	</QUALIFIER>
+
+	<ORGANISM>
 		<!-- A -->
 		<ITEM>
 			<ID>C0001</ID>
@@ -80,7 +107,6 @@
 			<PLURAR_TERM>avoines</PLURAR_TERM>
 			<MOTHER_PLANT>avoine</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- B -->
 		<ITEM>
 			<ID>C0012</ID>
@@ -102,6 +128,10 @@
 			<TERM>betterave</TERM>
 			<PLURAR_TERM>betteraves</PLURAR_TERM>
 			<MOTHER_PLANT>betterave</MOTHER_PLANT>
+			<SUBPLANTS>
+				<ID>D0003</ID>
+				<ID>D0004</ID>
+			</SUBPLANTS>
 		</ITEM>
 		<ITEM>
 			<ID>C0015</ID>
@@ -109,6 +139,10 @@
 			<TERM>blé</TERM>
 			<PLURAR_TERM>blés</PLURAR_TERM>
 			<MOTHER_PLANT>blé</MOTHER_PLANT>
+			<SUBPLANTS>
+				<ID>D0001</ID>
+				<ID>D0002</ID>
+			</SUBPLANTS>
 		</ITEM>
 		<ITEM>
 			<ID>C0016</ID>
@@ -117,7 +151,6 @@
 			<PLURAR_TERM>brocolis</PLURAR_TERM>
 			<MOTHER_PLANT>brocolis</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- C -->
 		<ITEM>
 			<ID>C0017</ID>
@@ -133,32 +166,27 @@
 			<PLURAR_TERM>carottes</PLURAR_TERM>
 			<MOTHER_PLANT>carotte</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- D -->
-		
 		<!-- E -->
-		
 		<!-- F -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0019</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>fraise</TERM>
 			<PLURAR_TERM>fraises</PLURAR_TERM>
 			<MOTHER_PLANT>fraisier</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0020</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>fraise</TERM>
 			<PLURAR_TERM>fraises</PLURAR_TERM>
 			<MOTHER_PLANT>fraisier</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- G -->
-
 		<!-- H -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0021</ID>
 			<CULTURE_CLASS>A0003</CULTURE_CLASS>
 			<TERM>haricot</TERM>
 			<PLURAR_TERM>haricots</PLURAR_TERM>
@@ -167,99 +195,91 @@
 		<!-- I -->
 		<!-- J -->
 		<!-- K -->
-
 		<!-- L -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0022</ID>
 			<CULTURE_CLASS>A0002</CULTURE_CLASS>
 			<TERM>lin</TERM>
 			<PLURAR_TERM>lins</PLURAR_TERM>
 			<MOTHER_PLANT>lin</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0023</ID>
 			<CULTURE_CLASS>A0002</CULTURE_CLASS>
 			<TERM>laitue</TERM>
 			<PLURAR_TERM>laitues</PLURAR_TERM>
 			<MOTHER_PLANT>laitue</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- M -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0024</ID>
 			<CULTURE_CLASS>A0003</CULTURE_CLASS>
 			<TERM>maïs</TERM>
 			<PLURAR_TERM>maïs</PLURAR_TERM>
 			<MOTHER_PLANT>maïs</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0025</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>melon</TERM>
 			<PLURAR_TERM>melons</PLURAR_TERM>
 			<MOTHER_PLANT>melon</MOTHER_PLANT>
 		</ITEM>
 		<!-- N -->
-
 		<!-- O -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0026</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>oignon</TERM>
 			<PLURAR_TERM>oignons</PLURAR_TERM>
 			<MOTHER_PLANT>oignons</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0027</ID>
 			<CULTURE_CLASS>A0002</CULTURE_CLASS>
 			<TERM>orge</TERM>
 			<PLURAR_TERM>orges</PLURAR_TERM>
 			<MOTHER_PLANT>orge</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- P -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0028</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>poire</TERM>
 			<PLURAR_TERM>poires</PLURAR_TERM>
 			<MOTHER_PLANT>poirier</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0029</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>pomme</TERM>
 			<PLURAR_TERM>pommes</PLURAR_TERM>
 			<MOTHER_PLANT>pommier</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- Q -->
-
 		<!-- R -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0030</ID>
 			<CULTURE_CLASS>A0002</CULTURE_CLASS>
 			<TERM>riz</TERM>
 			<PLURAR_TERM>riz</PLURAR_TERM>
 			<MOTHER_PLANT>riz</MOTHER_PLANT>
 		</ITEM>
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0031</ID>
 			<CULTURE_CLASS>A0001</CULTURE_CLASS>
 			<TERM>raisin</TERM>
 			<PLURAR_TERM>raisins</PLURAR_TERM>
 			<MOTHER_PLANT>vigne</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- S -->
 		<ITEM>
-			<ID>C0018</ID>
+			<ID>C0032</ID>
 			<CULTURE_CLASS>A0003</CULTURE_CLASS>
 			<TERM>salade</TERM>
 			<PLURAR_TERM>salades</PLURAR_TERM>
 			<MOTHER_PLANT>salade</MOTHER_PLANT>
 		</ITEM>
-
 		<!-- T -->
 		<!-- U -->
 		<!-- V -->
@@ -267,23 +287,69 @@
 		<!-- X -->
 		<!-- Y -->
 		<!-- Z -->
-	</PLANTS>
+	</ORGANISM>
 
-	<DESCRIPTORS>
+	<SPECIE>
+		<ITEM>
+			<ID>B0001</ID>
+			<KINGDOM>A0002</KINGDOM>
+			<TERM>fruit</TERM>
+			<PLURAR>fruits</PLURAR>
+		</ITEM>
+		<ITEM>
+			<ID>B0002</ID>
+			<KINGDOM>A0002</KINGDOM>
+			<TERM>céréale</TERM>
+			<PLURAR>céréales</PLURAR>
+		</ITEM>
+		<ITEM>
+			<ID>B0003</ID>
+			<KINGDOM>A0002</KINGDOM>
+			<TERM>légume</TERM>
+			<PLURAR>légumes</PLURAR>
+		</ITEM>
+		<ITEM>
+			<ID>B0004</ID>
+			<KINGDOM>A0001</KINGDOM>
+			<TERM>virus</TERM>
+			<PLURAR>virus</PLURAR>
+		</ITEM>
+		<ITEM>
+			<ID>B0005</ID>
+			<KINGDOM>A0001</KINGDOM>
+			<TERM>bactérie</TERM>
+			<PLURAR>bastéries</PLURAR>
+		</ITEM>
+		<ITEM>
+			<ID>B0006</ID>
+			<KINGDOM>A0001</KINGDOM>
+			<TERM>ravageur</TERM>
+			<PLURAR>ravageurs</PLURAR>
+			<SYNONYMS>
+				<SYN>insecte</SYN>
+			</SYNONYMS>
+		</ITEM>
+	</SPECIE>
+
+	<KINGDOM>
 		<ITEM>
 			<ID>A0001</ID>
-			<TERM>Fruit</TERM>
-			<PLURAR>Fruits</PLURAR>
+			<TERM>animal</TERM>
+			<SYNONYMS>
+				<SYN>bête</SYN>
+				<SYN>animaux</SYN>
+			</SYNONYMS>
 		</ITEM>
 		<ITEM>
 			<ID>A0002</ID>
-			<TERM>Céréale</TERM>
-			<PLURAR>Céréales</PLURAR>
+			<TERM>plante</TERM>
+			<SYNONYMS>
+				<SYN>plantes</SYN>
+				<SYN>herbe</SYN>
+				<SYN>herbes</SYN>
+				<SYN>végétaux</SYN>
+			</SYNONYMS>
 		</ITEM>
-		<ITEM>
-			<ID>A0003</ID>
-			<TERM>Légume</TERM>
-			<PLURAR>Légumes</PLURAR>
-		</ITEM>
-	</DESCRIPTORS>
+	</KINGDOM>
+
 </DATA>

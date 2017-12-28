@@ -205,7 +205,7 @@ class GenericDataAnalyzer(object):
 		Blabla
 		"""
 
-		# SUMMARIZE FOR EVERY DOCUMENT
+		# SUMMARY PLOT
 		if self.config.getboolean('options', 'plot_graphes') is True:
 			pass
 		# THEN, ANALYZE
@@ -220,20 +220,63 @@ class GenericDataAnalyzer(object):
 		with open('./terminology/vegetal_french_terminology.xml', 'r') as my_terminology:
 			termino_tree = etree.parse(my_terminology)
 			data_mapped = []
-			for document in data:
-				for word in document['scored_words']:
-					# IF WORD IS A PLANT, LINK ITS ID
-					if word[0] in [item.text.lower() for item in termino_tree.xpath('/DATA/PLANTS/ITEM/TERM') if item.text is not None]:
-						for item in termino_tree.xpath('/DATA/PLANTS/ITEM[TERM="{}"]/ID'.format(word[0])):
-							print('\t- {} ({}) found in document [{}]'.format(word[0], item.text, document['file_name']))
-							document['linked_ids'] = item.text
-					# SAME SHIT IF YOU FIND ANY LEVEL OF THE TERMINOLOGY
-					elif word[0] in [item.text.lower() for item in termino_tree.xpath('/DATA/PLANTS/ITEM/MOTHER_PLANT') if item.text is not None]:
-						for item in termino_tree.xpath('/DATA/PLANTS/ITEM[MOTHER_PLANT="{}"]/ID'.format(word[0])):
-							print('\t- {} ({}) found in document [{}]'.format(word[0], item.text, document['file_name']))
-							document['linked_ids'] = item.text
+			kingdoms = [item.text.lower() for item in termino_tree.xpath('/DATA/KINGDOM/ITEM/TERM') if item.text is not None] + [item.text.lower() for item in termino_tree.xpath('/DATA/KINGDOM/ITEM/SYNONYMS/SYN') if item.text is not None]
+			species = [item.text.lower() for item in termino_tree.xpath('/DATA/SPECIE/ITEM/TERM') if item.text is not None]
+			organisms = [item.text.lower() for item in termino_tree.xpath('/DATA/ORGANISM/ITEM/TERM') if item.text is not None]
 
+			# PARSING
+			for document in data:
+				LINKS = {}
+				for word in document['scored_words']:
+					# STEP 1: KINGDOM
+					if word[0] in kingdoms:
+						if word[0] in [item.text.lower() for item in termino_tree.xpath('/DATA/KINGDOM/ITEM/TERM') if item.text is not None]:
+							id_concept = termino_tree.xpath('/DATA/KINGDOM/ITEM[TERM="{}"]/ID'.format(word[0]))
+						###########
+						#~ ### WHAT ABOUT SYNONYMS? HOW TO CLIMB BACK ONE LEVEL TO GET ID FROM A IMBRICADED SYN?
+						#~ elif word[0] in [item.text.lower() for item in termino_tree.xpath('/DATA/KINGDOM/ITEM/SYNONYMS/SYN') if item.text is not None]:
+							#~ t = termino_tree.xpath('/DATA/KINGDOM/ITEM/SYNONYMS[SYN="{}"]'.format(word[0]))
+							#~ print(word[0])
+						##########
+							try:
+								if 'kingdoms' in LINKS.keys():
+									LINKS['kingdoms'].append({id_concept[0].text: word})
+								else:
+									LINKS['kingdoms'] = [{id_concept[0].text: word}]
+							except UnboundLocalError:
+								pass
+					# STEP 2: SPECIE
+					if word[0] in species:
+						id_concept = termino_tree.xpath('/DATA/SPECIE/ITEM[TERM="{}"]/ID'.format(word[0]))
+						try:
+							if 'species' in LINKS.keys():
+								LINKS['species'].append({id_concept[0].text: word})
+							else:
+								LINKS['species'] = [{id_concept[0].text: word}]
+						except UnboundLocalError:
+							pass
+					# STEP 3: ORGANISM
+					if word[0] in organisms:
+						id_concept = termino_tree.xpath('/DATA/ORGANISM/ITEM[TERM="{}"]/ID'.format(word[0]))
+						try:
+							if 'organisms' in LINKS.keys():
+								LINKS['organisms'].append({id_concept[0].text: word})
+							else:
+								LINKS['organisms'] = [{id_concept[0].text: word}]
+						except UnboundLocalError:
+							pass
+
+
+				document['links'] = LINKS
 				data_mapped.append(document)
+
+				if len(document['links'].keys()) > 0:
+					print(document['file_name'])
+					print(json.dumps(document['links'], indent=2, sort_keys=True, ensure_ascii=False))
+					print(' ='*20)
+
+
+
 
 
 if __name__ == '__main__':

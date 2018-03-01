@@ -27,7 +27,7 @@ http://tadadata.fr/twitter-cette-dinformations/
 
 ## map_nom_villes
 
-Look for villages or towns names containing a term and plot them on a map.
+Look for french village or town names containing a string and plot them on a map.
 
 
 ## personal_data_mining

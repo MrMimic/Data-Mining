@@ -20,7 +20,7 @@ http://tadadata.fr/hacking-horoscope/
 
 ## investissement_twitter
 
-Trying to search for startups rising lot of investments with twitter API.
+Try to search for startups rising lot of investments with twitter API.
 
 http://tadadata.fr/twitter-cette-dinformations/
 

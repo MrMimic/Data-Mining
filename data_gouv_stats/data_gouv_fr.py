@@ -10,7 +10,7 @@ success = 0
 error = 0
 errorURL = []
 
-''' Endpoint '''
+""" Endpoint """
 url = 'https://www.data.gouv.fr/api/1/topics/'
 response = urllib.request.urlopen(url)
 data = response.read()

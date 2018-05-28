@@ -1,7 +1,7 @@
 
 ## BSV
 
-An old project about "Vegetal Health Reports" publisheb in France.
+An old project about "Vegetal Health Reports" publisheb in France. Generic text parser.
 
 
 ## data_gouv_stats

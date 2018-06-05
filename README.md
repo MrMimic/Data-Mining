@@ -13,7 +13,7 @@ http://tadadata.fr/data-gouv-cadeau/
 
 ## fuck_horoscope
 
-Gets huge amount of horoscope predictions (~50 years) with POST requests and plot stats on to show that's bullshit.
+Gets huge amount of horoscope predictions (~50 years) and plot stats to show that's bullshit.
 
 http://tadadata.fr/hacking-horoscope/
 

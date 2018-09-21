@@ -19,10 +19,10 @@ def get_news_on_twitter(requested_terms):
 		tso.set_count(100)
 		# it's about time to create a TwitterSearch object with our secret tokens
 		ts = TwitterSearch(
-			consumer_key = '9EtnCfGKkd4sPdV1xnb9pbFrL',
-			consumer_secret = 'aVoRtcCHiKRa9A03qQG5sBw0xcyaICD04cLp91VSBThprcL7SR',
-			access_token = '163035097-6qc48iUfwjxB5I2gwR1ev7vEsKj9lmccppaBEYrH',
-			access_token_secret = 'MQLdxQ4IkshMtnXE1bvD2jR1O73QRq4OkmeBhqjgBWEbX')
+			consumer_key = '1',
+			consumer_secret = '2',
+			access_token = '3',
+			access_token_secret = '4')
 		# Dictionnary to handle tweets
 		tweets = {}
 		id_tweet = 1

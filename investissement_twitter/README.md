@@ -1,1 +1,0 @@
-# Investissment miner on Tweeter
